@@ -28,28 +28,13 @@ spring:
     livereload:
       enabled: false # we use gulp + BrowserSync for livereload
 
-  jpa:
-    database-platform: org.hibernate.dialect.Oracle12cDialect
-    database: ORACLE
-    show-sql: false
-    properties:
-      hibernate.id.new_generator_mappings: true
-      hibernate.cache.use_second_level_cache: false
-      hibernate.cache.use_query_cache: false
-      hibernate.generate_statistics: true
-
-  datasource:
-    hikari:
-      connection-timeout: 60000
-      maximum-pool-size: 1
-
 server:
   port: 8080
 
 microservice:
   hulkapiadditem:
     feign:
-      uri: ${HULK_ADD_URLCLTS}
+      uri: https://dog.ceo/api
   hulkapipickorders:
     feign:
-      uri: ${HULK_PCIK_URLCLTS}
+      uri: https://dog.ceo/api
