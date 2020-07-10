@@ -14,11 +14,6 @@
 logging:
   level:
     ROOT: DEBUG
-  logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
-    enabled: false
-    host: localhost
-    port: 5000
-    queue-size: 512
 spring:
   profiles:
     active: dev
