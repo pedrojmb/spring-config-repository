@@ -27,9 +27,7 @@ server:
   port: 8080
 
 microservice:
-  hulkapiadditem:
+  dogceo:
     feign:
       uri: https://dog.ceo/api
-  hulkapipickorders:
-    feign:
-      uri: https://dog.ceo/api
+      
